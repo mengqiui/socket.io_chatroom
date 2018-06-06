@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>My chatRoom</title>
+    <link rel="stylesheet" href="css/common.css"/>
+</head>
+<body class="bgRoom">
+    <!-- 顶部聊天室名称 -->
+    <header class="header">欢迎进入哔哩哔哩聊天室</header>
+    <!-- 整个中间区域 -->
+    <section class="section">
+        <!-- 聊天室左边在线用户列表 -->
+        <aside class="leftList"></aside>
+        <!-- 聊天区域 -->
+        <div class="rightBox">
+            <!-- 内容显示区 -->
+            <div class="contentBox"></div>
+            <!-- 信息发送区 -->
+            <div class="messageBox">
+                <div class="toolbar"></div>
+                <textarea class="textMsg" onkeyup="enterMessage()" placeholder="请输入……"></textarea>
+            </div>
+        </div>
+    </section>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/chatRoom.js"></script>
+
+</body>
+</html>
